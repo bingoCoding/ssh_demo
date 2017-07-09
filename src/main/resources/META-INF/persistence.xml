@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+    <persistence-unit name="ssh" transaction-type="RESOURCE_LOCAL">
+
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" /><!--com.mysql.jdbc.Driver--><!--org.gjt.mm.mysqlDriver-->
+            <property name="hibernate.connection.username" value="root" />
+            <property name="hibernate.connection.password" value="05114" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/shop?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=true" />
+            <property name="hibernate.max_fetch_depth" value="3" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
